@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"Category": "Game",
+	"Description": "Prototype architecture for a detective interrogation game with one room, one AI suspect, voice input, voice output, memory, and hidden emotional state.",
+	"Modules": [
+		{
+			"Name": "InterrogationPrototype",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "AudioCapture",
+			"Enabled": true
+		}
+	]
+}

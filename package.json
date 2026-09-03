@@ -1,0 +1,12 @@
+{
+  "name": "the-voss-case",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An AI-driven detective interrogation game.",
+  "scripts": {
+    "start": "serve . -l 3000 --no-clipboard"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

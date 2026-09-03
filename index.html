@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <title>The Voss Case — AI Detective Interrogation Game</title>
+  <meta name="description" content="Interrogate Elias Voss, the only suspect in the disappearance of Mara Ellison. A grounded, AI-driven detective game where every question shapes trust, stress, and suspicion." />
+  <meta name="keywords" content="detective game, AI interrogation, mystery game, interactive fiction, The Voss Case, Elias Voss, Mara Ellison" />
+  <meta name="author" content="The Voss Case" />
+  <link rel="canonical" href="https://thevosscase.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thevosscase.com/" />
+  <meta property="og:title" content="The Voss Case — AI Detective Interrogation Game" />
+  <meta property="og:description" content="Mara Ellison vanished at 22:14. Elias Voss says he never left the bar. Interrogate him, present evidence, and break his story." />
+  <meta property="og:image" content="https://thevosscase.com/background.jpg" />
+  <meta property="og:image:alt" content="Interrogation room of The Voss Case detective game" />
+  <meta property="og:site_name" content="The Voss Case" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Voss Case — AI Detective Interrogation Game" />
+  <meta name="twitter:description" content="Mara Ellison vanished at 22:14. Elias Voss says he never left the bar. Interrogate him, present evidence, and break his story." />
+  <meta name="twitter:image" content="https://thevosscase.com/background.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "The Voss Case",
+    "url": "https://thevosscase.com/",
+    "description": "An AI-driven detective interrogation game. Interrogate Elias Voss about the disappearance of Mara Ellison.",
+    "genre": ["Mystery", "Interactive Fiction", "Detective"],
+    "applicationCategory": "Game",
+    "operatingSystem": "Any",
+    "gamePlatform": "Web",
+    "inLanguage": "en",
+    "image": "https://thevosscase.com/background.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "The Voss Case"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <span class="case-file">CASE 08–VOSS</span>
+      <nav class="stage3-nav" aria-label="Case sections">
+        <button data-stage="overview">CASE OVERVIEW</button>
+        <button data-stage="evidence">EVIDENCE</button>
+        <button data-stage="timeline">TIMELINE</button>
+        <button data-stage="suspects">SUSPECTS</button>
+        <button data-stage="notes">NOTES</button>
+        <button data-stage="interrogation" class="active">INTERROGATION</button>
+      </nav>
+      <span class="status"><i></i> LOCAL CONNECTION</span>
+      <button id="reset" class="quiet-button">Reset case</button>
+    </header>
+
+    <section class="room" aria-label="Interrogation room">
+      <div class="light"></div>
+      <div class="mirror"></div>
+      <div class="suspect-shadow"></div>
+      <div class="table">
+        <div class="recorder"></div>
+        <div class="evidence-photo"></div>
+      </div>
+      <div class="suspect">
+        <p class="suspect-name">ELIAS VOSS</p>
+        <div class="head"></div>
+        <div class="body"></div>
+      </div>
+      <div class="room-caption">INTERROGATION ROOM 02 · 23:17</div>
+    </section>
+
+    <aside class="case-panel">
+      <p class="overline">Evidence</p>
+      <h1>The Voss<br />Case</h1>
+      <p class="case-copy">Mara Ellison disappeared at 22:14. Elias Voss says he never left the bar.</p>
+      <div class="evidence-list">
+        <button data-prompt="The alley camera places you behind the Marlowe at 22:19. Explain that.">
+          <b>01</b> Alley camera
+        </button>
+        <button data-prompt="Why is your fingerprint on Mara's phone?">
+          <b>02</b> Mara's phone
+        </button>
+        <button data-prompt="Your keycard was used at the Lydon Hotel. Who had it?">
+          <b>03</b> Hotel keycard
+        </button>
+      </div>
+    </aside>
+
+    <section class="transcript" id="transcript" aria-live="polite">
+      <article class="message suspect-message"><span>ELIAS</span><p>You're wasting your time, detective. I told you everything I know.</p></article>
+    </section>
+
+    <form class="question-box" id="question-form">
+      <label for="question">Your question</label>
+      <div>
+        <input id="question" autocomplete="off" placeholder="Ask Elias about the night Mara disappeared…" />
+        <button id="ask" type="submit">Ask <span>↵</span></button>
+      </div>
+      <p id="connection-note">Connected to localhost:20128</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>The Voss Case · an AI-driven detective interrogation game</p>
+    <p><a href="/sitemap.xml">Sitemap</a> · <a href="/llms.txt">llms.txt</a></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
