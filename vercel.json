@@ -1,12 +1,5 @@
 {
-  "buildCommand": "echo 'Static site — no build step required.'",
+  "buildCommand": "echo 'Static site - no build step required.'",
   "outputDirectory": ".",
-  "framework": null,
-  "redirects": [
-    {
-      "source": "/:path(.*)",
-      "destination": "/404.html",
-      "statusCode": 404
-    }
-  ]
+  "framework": null
 }
