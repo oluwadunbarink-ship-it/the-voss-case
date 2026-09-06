@@ -78,7 +78,7 @@ Deploying is free on both platforms' hobby/free tiers.
 
 Prototype project. Not for commercial distribution.
 
-## Why did I built this project
+## Why did I build this project
 
 - The main aim of this project was to generally show one of the unlimited possibilities AI can be used for in the future, which is helping to analyse cases and piece together information as shown in Room 17. The possibilities are endless and i feel there are many ways to achieve a fully functional and advanced world with AI models and agents working around the clock 24/7
 - The Voss case was simply inspired by similar game where i found on roblox and the popular 2018 game "Detroit: Became human", this was to make a friendly game where users can interact with a system normally and get used to the feeling, sounds etc of having to fully speak with an AI
