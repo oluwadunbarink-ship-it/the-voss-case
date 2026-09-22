@@ -96,6 +96,8 @@ Prototype project. Not for commercial distribution.
 
 - Another big problem I had was with the AI's contingency to go outside the parameters which it had been given or being able to lack the answers to some humane questions.
 
+-Another major problem i came across was keeping the originality of the tunnelling straight to the website, which causes the common error of service returning 502. 
+
 ## What skills I learnt in the process of doing all of this
 At the beginning, I mainly thought of cybersecurity as protecting a website from obvious attacks. Building The Voss Case made me understand that security also has to be considered in the architecture of an AI application.
 
@@ -109,5 +111,4 @@ Designing system instructions that reduce hallucination and keep the AI within d
 Security-conscious development practices
 Recognizing that AI-generated output cannot be treated as trusted data; validating state changes and evidence presentation on the application side rather than trusting the model.
 
-Overall, the project changed my understanding of cybersecurity from simply protecting a system to designing the entire system so that sensitive information, user input, APIs, and AI-generated content are handled safely.
-
+Overall, the project changed my understanding of AI from simply a system to designing the entire system so that I can prove to the world that AI is more than a Chat box or something that can "make life easier". It can EVOLVE it 
